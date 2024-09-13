@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevinz Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script> <!-- Link the external JavaScript file -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="https://images-platform.99static.com/IPG0oX6KOQrFeVzKkgcRibkpqF4=/157x157:1417x1417/500x500/top/smart/99designs-contests-attachments/115/115998/attachment_115998183" alt="TaskFlow Logo" class="logo-image">
+        <h1 class="company-title">Kevinz Enterprises</h1>
+    </header>
+
+    <!-- Login Form -->
+    <div class="container" id="login-container">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <button class="btn" type="button" id="login-button">Login</button>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="container dashboard" id="admin-dashboard" style="display: none;">
+        <h2>Admin Dashboard</h2>
+        <button class="btn logout-btn" type="button" id="logout-button">Logout</button>
+
+        <h3>Manage Employees</h3>
+        <label for="employee-name">Add Employee</label>
+        <input type="text" id="employee-name" placeholder="Add Employee">
+        <button class="btn" type="button" id="add-employee-button">Add Employee</button>
+        <ul id="employee-list"></ul>
+
+        <h3>Manage Tasks</h3>
+        <label for="task-input">Task Description</label>
+        <input type="text" id="task-input" placeholder="Task Description">
+        <label for="employee-select">Assign to</label>
+        <select id="employee-select"></select>
+        <button class="btn" type="button" id="assign-task-button">Assign Task</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Employee Dashboard -->
+    <div class="container dashboard" id="employee-dashboard" style="display: none;">
+        <h2>Employee Dashboard</h2>
+        <button class="btn logout-btn" type="button" id="employee-logout-button">Logout</button>
+        <h3>Your Tasks</h3>
+        <ul id="employee-task-list"></ul>
+    </div>
+</body>
+</html>
